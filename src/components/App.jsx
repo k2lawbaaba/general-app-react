@@ -28,10 +28,6 @@ function App() {
     </Routes>
 
     </Router>
-  {/* </div> */}
-
-    {/* <ToDoList /> */}
-      {/* <Authentication /> */}
     </div>
   );
 }
