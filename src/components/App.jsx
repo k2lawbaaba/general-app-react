@@ -2,7 +2,7 @@ import React from "react";
 import Authentication from "./Authentication";
 import ToDoList from "./ToDoList";
 import Button from "./Button";
-import Register from "./Register";
+import Fetch from "./Fetch";
 import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 
@@ -14,7 +14,7 @@ function App() {
   {/* <div className="general"> */}
   <Router>
     <div className="btnDiv"><Link to="/ToDoList"><Button type="submit" text="Todo List" class="btn"/></Link></div>
-    <div className="btnDiv"><Link to="/"><Button type="submit" text="Fetch API" class="btn"/></Link></div>
+    <div className="btnDiv"><Link to="/Fetch"><Button type="submit" text="Fetch API" class="btn"/></Link></div>
     <div className="btnDiv"><Link to="/Authentication"><Button type="submit" text="Login/SignUp" class="btn"/></Link></div>
     
     <Routes>
@@ -22,12 +22,13 @@ function App() {
       
       <Route path="/ToDoList" element={<ToDoList />} />
       
-      <Route path="/Register"  element={ <Register />} />
+      <Route path="/Fetch"  element={ <Fetch />} />
       
 
     </Routes>
 
     </Router>
+
     </div>
   );
 }
