@@ -15,7 +15,7 @@ const Fetch=()=>
             
             setRetrievd(data.results)
         }
-        Fetch();
+        Fetch()
     },[])
 
         const test=()=>{
@@ -34,9 +34,6 @@ const Fetch=()=>
                     name={(retriveData[item].name.title+" " + retriveData[item].name.first+" "+ retriveData[item].name.last)}   
                 />
                </>
-            
-               
-               
                }
         }
 
@@ -44,8 +41,5 @@ const Fetch=()=>
            <h1 id="fetchHeading">Random Person's Profile</h1>
            {test()}
     </div>
-
-
-
 }
 export default Fetch;

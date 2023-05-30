@@ -20,7 +20,7 @@ const Authentication=(prop)=>{
    <Button click={login} value="true" text="Login" class="yesNoBtn"/> 
    }
  </p>
-  <Login logReg={isRegistered} /> 
+  <div><Login logReg={isRegistered} /> </div>
   
   </div>
 }
